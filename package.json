@@ -1,0 +1,35 @@
+{
+  "name": "es6",
+  "version": "1.0.0",
+  "description": "ES6 features",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build-watch & npm run server",
+    "build-watch": "webpack -d --watch",
+    "server": "browser-sync start --server --files='dist/bundle.js,index.html' --no-notify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sasha7/es6.git"
+  },
+  "keywords": [
+    "ES6"
+  ],
+  "author": "Sasa Macakanja",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sasha7/es6/issues"
+  },
+  "devDependencies": {
+    "babel-core": "^5.6.15",
+    "babel-loader": "^5.2.2",
+    "babel-runtime": "^5.6.15",
+    "node-libs-browser": "^0.5.2",
+    "webpack": "^1.10.0",
+    "browser-sync": "^2.11.2"
+  },
+  "dependencies": {
+    "lodash": "^3.10.1"
+  },
+  "homepage": "https://github.com/sasha7/es6#readme"
+}
